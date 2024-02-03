@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link rel="shortcut icon" href="./assets/resources/images/iconlogin.png">
     <link rel="stylesheet" href="./assets/styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Login</title>
+    <title>LOGIN</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="login-left">
-            <div class="login-header">
-                <h1>Bienvenido al LOGIN</h1>
-                <p>Porfavor haz Login para Ingresar</p>
-            </div>
-            <form class="login-form" autocomplete="off">
-                <div class="login-content">
-                    <div class="form-item">
-                        <label for="email">Ingresa el Email</label>
-                        <input type="email" placeholder="ejemplo@email.com">
-                    </div>
-                    <div class="form-item">
-                        <label for="password">Ingresa la contraseña</span></label>
-                        <label for="text"></label>
-                        <input type="password" placeholder="Ingresa tu Contraseña" required class="pass-key">
-                    </div>
-                    <div class="form-item">
-                        <div class="checkbox">
-                            <input type="checkbox"id="rememberMeCheckbox" checked>
-                            <label for="rememberMeCheckbox" class="checkboxlabel">Recuerdame</label>
-                        </div>
-                    </div>
-                    <button type="submit"><b>LOGIN</b></button>
+    <div class="login">
+        <img src="./assets/resources/images/fondo.jpg" alt="image" class="login__bg">
+
+        <form action="" class="login__form">
+            <h1 class="login__title">Login</h1>
+
+            <div class="login__inputs">
+                <div class="login__box">
+                    <input type="email" placeholder="Correo Electrónico" required class="login__input">
+                    <i class="ri-mail-fill"></i>
                 </div>
 
-            </form>
-        </div>
-        <div class="login-right">
-            <img src="images/Data Arranging_Two Color.svg" alt="">
-        </div>
+                <div class="login__box">
+                    <input type="password" placeholder="Contraseña" required class="login__input">
+                    
+                </div>
+            </div>
+            <button type="submit" class="login__button">Iniciar Sesión</button>
+        </form>
     </div>
-    <script src="javascript/index.js"></script>
 </body>
+
 </html>
