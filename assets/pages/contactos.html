@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="../styles/contactos.css">
 </head>
 <body>
+    <nav> 
+        <a href="../pages/favoritos.html">Favoritos ❤</a>
+        <a href="../pages/perfilusuario.html">Perfil de Usuario 🜔</a>
+      </nav>
     <header>
+        
         <h1>Contactos</h1>
     </header>
     <section class="contact-list">
-        <img src="./assets/resources/images/fondo.jpg" alt="image" class="login__bg">
         <div class="background"></div>
         <table>
             <thead>
@@ -22,7 +26,7 @@
                     <th>Apellido</th>
                     <th>Correo</th>
                     <th>Celular</th>
-                    <th>Ver Contacto</th>
+                    <th>Detalles del Contacto</th>
                 </tr>
             </thead>
             <tbody>
@@ -32,7 +36,7 @@
                     <td>Pérez</td>
                     <td>juanperez2@gmail.com</td>
                     <td>4583-2536</td>
-                    <td><button onclick="window.location.href = '../otra_carpeta/pagina_destino.html';">VER</button></td>
+                    <td><button onclick="window.location.href = '../pages/contactouno.html';">VER CONTACTO</button></td>
                 </tr>
                 <tr>
                     <td><b>#2</b></td>
@@ -40,7 +44,7 @@
                     <td>Palacios</td>
                     <td>cpalacios12@gmail.com</td>
                     <td>7839-2534</td>
-                    <td><button onclick="window.location.href = '../otra_carpeta/pagina_destino.html';">VER</button></td>
+                    <td><button onclick="window.location.href = '../pages/contactodos.html';">VER CONTACTO</button></td>
                 </tr>
                 <tr>
                     <td><b>#3</b></td>
@@ -48,7 +52,7 @@
                     <td>Ortiz</td>
                     <td>mortizdx@gmail.com</td>
                     <td>7483-3829</td>
-                    <td><button onclick="window.location.href = '../otra_carpeta/pagina_destino.html';">VER</button></td>
+                    <td><button onclick="window.location.href = '../pages/contactotres.html';">VER CONTACTO</button></td>
                 </tr>
                 <tr>
                     <td><b>#4</b></td>
@@ -56,7 +60,7 @@
                     <td>Pérez</td>
                     <td>perezluiz@gmail.com</td>
                     <td>9367-1120</td>
-                    <td><button onclick="window.location.href = '../otra_carpeta/pagina_destino.html';">VER</button></td>
+                    <td><button onclick="window.location.href = '../pages/contactocuatro.html';">VER CONTACTO</button></td>
                 </tr>
                 <tr>
                     <td><b>#5</b></td>
@@ -64,14 +68,13 @@
                     <td>Castro</td>
                     <td>antonicas@gmail.com</td>
                     <td>3378-3280</td>
-                    <td><button onclick="window.location.href = '../otra_carpeta/pagina_destino.html';">VER</button></td>
+                    <td><button onclick="window.location.href = '../pages/contactocinco.html';">VER CONTACTO</button></td>
                 </tr>
-
             </tbody>
         </table>
     </section>
     <footer>
-        <button onclick="location.href='index.html'">Agregar Nuevo Contacto</button>
+        <button type="submit" class="button" onclick="window.location.href = '../pages/newcontacto.html';">Nuevo Contacto</button>
     </footer>
 
     
