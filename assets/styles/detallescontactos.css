@@ -45,9 +45,6 @@ body {
     text-align: center;
   }
 
-  h2{
-    color: #f4f4f4;
-  }
 
   .contact-info {
     display: flex;
@@ -57,15 +54,18 @@ body {
   }
   
   .contact-image {
+    padding-top: 20px;
     border: 5px solid hsl(0, 0%, 0%);
-    width: 90%;
-    max-width: 370px;
-    margin-bottom: 10px;
+    width: 70%;
+    max-width: 360px;
+    margin-bottom: 30px;
   }
   
   .contact-image img {
-    width: 100%;
-    border-radius: 8px;
+    padding-top: 20px;
+    padding-top: 15px;
+    width: 95%;
+    border-radius: 10px;
   }
   
   .contact-details {
@@ -74,13 +74,14 @@ body {
   }
   
   .additional-info {
+    
     color: #f4f4f4;
-    width: 100%;
-    margin-top: 30px;
+    width: 90%;
+    margin-top: 10px;
   }
   
   h2 {
-    color: #ffffff;
+    color: #0077ff;
   }
   
   ul {
