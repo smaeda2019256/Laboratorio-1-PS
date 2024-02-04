@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo List - Tareas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="../styles/to-dolist.css">
 </head>
 <body>
-    <h1></h1>
+    <nav> 
+        <a href="../pages/contactos.html">Contactos</a>
+        <a href="../pages/favoritos.html">Favoritos ❤</a>
+        <a href="../pages/perfilusuario.html">Perfil de Usuario 🜔</a>
+      </nav>
+      <h1>ToDo List - Tareas</h1>
+    <div class="container">
+        <form id="todo-form">
+          <input type="text" id="todo-input" placeholder="Agregar Nueva Tarea">
+          <select id="priority-select">
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+          </select>
+          <button type="submit">Agregar</button>
+        </form>
+        <table id="todo-table">
+          <thead>
+            <tr>
+              <th>Número de Tarea</th>
+              <th>Nombre de la Tarea</th>
+              <th>Prioridad</th>
+              <th>Editar</th>
+              <th>Eliminar</th>
+            </tr>
+          </thead>
+          <tbody id="todo-list">
+          </tbody>
+        </table>
+      </div>
+      <script src="../logica/logica.js"></script>
 </body>
 </html>
