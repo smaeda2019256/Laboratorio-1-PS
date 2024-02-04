@@ -43,4 +43,36 @@ function addTodo() {
   }
 }
 
-
+function deleteTodo(index) {
+    todos.splice(index, 1);
+    renderTodos();
+  }
+  
+  function editTodo(index) {
+    const newText = prompt('Escribe la Nueva Tarea:');
+    if (newText !== null) {
+      todos[index].text = newText;
+      renderTodos();
+    }
+  }
+  
+  todoForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    addTodo();
+  });
+  
+  todoList.addEventListener('click', function(event) {
+    if (event.target.classList.contains('delete-button')) {
+      const index = event.target.getAttribute('data-index');
+      deleteTodo(index);
+    }
+  });
+  
+  todoList.addEventListener('click', function(event) {
+    if (event.target.classList.contains('edit-button')) {
+      const index = event.target.getAttribute('data-index');
+      editTodo(index);
+    }
+  });
+  
+  renderTodos();

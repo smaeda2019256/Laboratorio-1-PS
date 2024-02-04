@@ -38,9 +38,7 @@ nav {
    
 }
 
-section{
-    background-color: #fff;
-}
+
 
 h1 {
     color: #fff;
@@ -96,7 +94,6 @@ h1 {
 #todo-table td button {
     padding: 5px 10px;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(54, 136, 153, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(6, 78, 166, 1) 48%);
-
     border: none;
     color: #fff;
     cursor: pointer;
@@ -105,6 +102,22 @@ h1 {
 @media only screen and (max-width: 900px) {
     #todo-form {
         flex-wrap: wrap;
+    }
+
+    #todo-table{
+        flex-wrap: wrap;
+    }
+
+    #todo-table th{
+        width: calc(200% - 100px);
+    }
+
+    nav{
+        width: calc(270% - 100px);
+    }
+
+    .container{
+        width: calc(200% - 90px);
     }
 
     #todo-form input,

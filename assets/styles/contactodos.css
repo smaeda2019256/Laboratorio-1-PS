@@ -101,6 +101,10 @@ body {
     .contact-details {
       width: calc(60% - 20px);
     }
+
+    nav{
+        width: calc(270% - 100px);
+    }
   
     .contact-image {
       width: calc(40% - 20px);
